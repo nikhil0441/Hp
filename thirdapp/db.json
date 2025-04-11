@@ -1,0 +1,22 @@
+{
+  "employee": [
+    {
+      "empno": 1,
+      "name": "nikhil",
+      "age": 21,
+      "city": "bhopal",
+      "designation": "coder",
+      "salary": 89000,
+      "id": "0955"
+    },
+    {
+      "id": "1de8",
+      "empno": "2",
+      "name": "harsh",
+      "age": "19",
+      "city": "Bhopal",
+      "designation": "Programmer",
+      "salary": "87999"
+    }
+  ]
+}

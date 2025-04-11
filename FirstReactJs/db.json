@@ -1,0 +1,9 @@
+{
+  "Student": {
+    "id": 1,
+    "rollNo": 121,
+    "name": "Nikhil",
+    "city": "Bhopal",
+    "fees": 34500
+  }
+}
