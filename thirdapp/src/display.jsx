@@ -11,41 +11,56 @@ const Display = () => {
     setMydata(response.data);
   };
 
-
   useEffect(() => {
     loadData();
   }, []);
 
-  const ans = mydata.map((key) => {
-    return (
-      <>
-        <tr>
-          <td>{key.id}</td>
-          <td>{key.name}</td>
-          <td>{key.age}</td>
-          <td>{key.city}</td>
-          <td>{key.designation}</td>
-          <td>{key.salary}</td>
-        </tr>
-      </>
-    );
-  });
+  const tableStyle = {
+    borderCollapse: "collapse",
+    width: "80%",
+    margin: "20px auto",
+  };
+
+  const thTdStyle = {
+    border: "1px solid #ddd",
+    padding: "8px",
+    textAlign: "center",
+  };
+
+  const headerStyle = {
+    backgroundColor: "#f2f2f2",
+    fontWeight: "bold",
+  };
+
+  const ans = mydata.map((key) => (
+    <tr key={key.id}>
+      <td style={thTdStyle}>{key.id}</td>
+      <td style={thTdStyle}>{key.name}</td>
+      <td style={thTdStyle}>{key.age}</td>
+      <td style={thTdStyle}>{key.city}</td>
+      <td style={thTdStyle}>{key.designation}</td>
+      <td style={thTdStyle}>{key.salary}</td>
+    </tr>
+  ));
 
   return (
     <>
-      <h1>Employee Data:</h1>
-      <table border="1">
-        <tr>
-          <th>id</th>
-          <th>name</th>
-          <th>age</th>
-          <th>city</th>
-          <th>designation</th>
-          <th>salary</th>
-        </tr>
-        {ans}
+      <h1 style={{ textAlign: "center" }}>Employee Data</h1>
+      <table style={tableStyle}>
+        <thead>
+          <tr>
+            <th style={{ ...thTdStyle, ...headerStyle }}>ID</th>
+            <th style={{ ...thTdStyle, ...headerStyle }}>Name</th>
+            <th style={{ ...thTdStyle, ...headerStyle }}>Age</th>
+            <th style={{ ...thTdStyle, ...headerStyle }}>City</th>
+            <th style={{ ...thTdStyle, ...headerStyle }}>Designation</th>
+            <th style={{ ...thTdStyle, ...headerStyle }}>Salary</th>
+          </tr>
+        </thead>
+        <tbody>{ans}</tbody>
       </table>
     </>
   );
 };
+
 export default Display;
