@@ -17,6 +17,15 @@
       "city": "Bhopal",
       "designation": "Programmer",
       "salary": "87999"
+    },
+    {
+      "id": "5b92",
+      "empno": "132",
+      "name": "Amar",
+      "age": "30",
+      "city": "Bhopal",
+      "designation": "coder",
+      "salary": "90000"
     }
   ]
 }
