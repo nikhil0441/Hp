@@ -7,7 +7,7 @@ const App=()=>{
       <>
         <h1>Welcome !!!!! {input}</h1>
         <button onClick={()=>{setInput("Harshal")}}>Click Me!!!!</button>
-        <mycontext.Provider value={input}>
+        <mycontext.Provider value={{input}}>
           <Comp1 />
         </mycontext.Provider>
       </>
