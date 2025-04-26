@@ -1,9 +1,9 @@
-import { createRoot } from "react-dom/client";
-import App from "./App.jsx";
-import UserContext from "./UserContext.jsx";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import UserContext from "./usercontext";
 
-const root = createRoot(document.getElementById("root"));
-
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <UserContext>
     <App />

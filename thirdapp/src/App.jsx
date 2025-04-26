@@ -1,41 +1,20 @@
-// import Cybrom1 from "./Cybrom1";
+import { useContext } from "react";
+import { myContext } from "./usercontext";
 
-import Cybrom2 from "./Cybrom2";
+const App = () => {
+  const { name, setName } = useContext(myContext);
 
-// const App=()=>{
-//     return(
-//         <>
-//         <h1>Welcome !!!!!!!!!!!!!!</h1>
-//         <Cybrom1>
-//             we learn React JS
-//         </Cybrom1>
-//         </>
-//     )
-// };
-// export default App;
+  const changeName = () => {
+    setName("newName"); // you can set any new name
+  };
 
+  return (
+    <>
+      <h1>Welcome to React</h1>
+      <h2>Name: {name}</h2>
+      <button onClick={changeName}>Change Name</button>
+    </>
+  );
+};
 
-
-const App=()=>{
-    return(
-        <>
-        <h1>Welcome</h1>
-        <Cybrom2/>
-        </>
-    )
-}
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
