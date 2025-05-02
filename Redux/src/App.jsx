@@ -1,65 +1,66 @@
-// import { useDispatch,useSelector } from "react-redux";
-// import { changeColor } from "./colorSlice";
-// import { useState } from "react";
-// const App=()=>{
-//     const myclr=useSelector(state=>state.mycolor.color);
-//     const [val,setValue]=useState("");
-//     const dispath=useDispatch();
 
-//     return(
-//         <>
-//         <h1>Change Color for div</h1>
-//         Enter Color: <input type="text" onChange={(e)=>{setValue(e.target.value)}} />
-//         <button onClick={()=>{dispath(changeColor(val))}}>Click Me!!!</button>
-//         <br />
-//         <br />
-//         <div style={{width:"200px", height:"200px", border:"2px solid black",backgroundColor:myclr}}>
-
-//         </div>
-//         </>
-//     )
-// }
-// export default App;
+import "./App.css"; // Importing the CSS file for styling
+import { useSelector, useDispatch } from "react-redux";
+import { addTask,delTask } from "./ToDoSlice";
 
 
-import { useSelector,useDispatch } from "react-redux";
-import { addTask } from "./ToDoSlice";
 import { useState } from "react";
-const App=()=>{
-    const work=useSelector(state=>state.ToDo.task);
-    const disPath=useDispatch();
-    
-    const [val,setVal]=useState("");
-    let sno=0;
-    const ans=work.map((key)=>{
-        sno++;
-        return(
-            <>
-            <tr>
-                
-                <td>{sno}</td>
-           <td>{key.task}</td>
-            </tr>
-            </>
-        )
-    })
-    return(
-        <>
-        <h1>TODO Programm</h1>
-       
-        Enter Wprk: <input type="text" onChange={(e)=>{setVal(e.target.value)}} />
-       <button onClick={()=>{disPath(addTask({task:val}))}}>Add</button>
-       
-       <hr />
-       <table>
-        <tr>
-            <th>#</th>
-       <th></th>
-        </tr>
-        {ans}
-       </table>
-        </>
+
+const App = () => {
+  const work = useSelector((state) => state.todo.task);
+  const dispatch = useDispatch();
+
+  const [val, setVal] = useState("");
+  let sno = 0;
+
+  const ans = work.map((key) => {
+    sno++;
+    return (
+      <tr key={sno} className="table-row">
+        <td className="table-cell">{sno}</td>
+        <td className="table-cell">{key.task}</td>
+        <td className="table-cell">
+          <button onClick={()=>dispatch(delTask({id:key.id}))} >Delete</button>
+        </td>
+      </tr>
+    );
+  });
+  const del=(e)=>{
+   console.log(e);
+  }
+
+  return (
+    <div className="app-container">
+      <h1 className="title">TODO Program</h1>
+      <div className="input-container">
+        <label className="label">Enter Work:</label>
+        <input
+          type="text"
+          value={val}
+          className="input-box"
+          onChange={(e) => setVal(e.target.value)}
+        />
+        <button
+          className="add-button"
+          onClick={() => dispatch(addTask({ task: val }))}
+        >
+          Add
+        </button>
         
-    )
-}
+      </div>
+      <hr />
+      <table className="task-table">
+        <thead>
+          <tr>
+            <th className="table-header">#</th>
+            <th className="table-header">Task</th>
+            <th className="table-header" >Delete</th>
+          </tr>
+        </thead>
+        <tbody>{ans}</tbody>
+      </table>
+    </div>
+  );
+};
+
 export default App;
