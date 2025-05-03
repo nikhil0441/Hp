@@ -17,6 +17,16 @@ const App = () => {
           Delete
         </button>
       </td>
+      <td className="table-cell">
+        <button onClick={() => dispatch(delTask({ id: key.id }))}>
+          Delete
+        </button>
+      </td>
+      <td className="table-cell">
+        <button onClick={() => dispatch(delTask({ id: key.id }))}>
+          Delete
+        </button>
+      </td>
     </tr>
   ));
 
