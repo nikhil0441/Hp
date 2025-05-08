@@ -1,0 +1,44 @@
+.carousel-img {
+  width: 100%; /* Ensures responsiveness */
+  height: 500px; /* Set a fixed height */
+  /* object-fit: cover; Prevents stretching */
+}
+.headline{
+  /* margin: 20px; */
+}
+.headline h1{
+  margin: 30px;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.headline h2{
+  margin: 30px;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.products{
+  display: flex;
+justify-content: space-between;
+  flex-wrap: wrap;
+}
+.products div{
+    margin: 30px;
+    gap: 20px;
+    width: 350px;
+    height: 350px;
+    /* background-color: cadetblue; */
+    border: 1px solid black;
+}
+.products div img{
+     width: 350px;
+    height: 300px;
+}
+.products div h4{
+    font-size: 30px;
+    color: white;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(26, 27, 49);
+}
