@@ -1,6 +1,8 @@
 // import "../css/style.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import products from "../config/product";
 import "../css/Home.css"
+import axios from "axios";
 import Carousel from "react-bootstrap/Carousel";
 import hp2 from "../images/hp2.avif";
 import hp3 from "../images/hp3.avif";
@@ -11,6 +13,18 @@ import hp7 from "../images/hp7.avif";
 import hp8 from "../images/hp8.avif";
 import hp9 from "../images/hp9.avif";
 const Home = () => {
+  const [mydata,setData]=useState([]);
+ const loadData=async()=>{
+   let response=await axios.get(products);
+   setData(response.data);
+  
+ }
+useEffect(() => {
+  loadData(); // Fetch products when component mounts
+}, []);
+
+
+ 
   return (
     //   <h1>Welcome to the Home Page!</h1>
     <div>
@@ -67,19 +81,15 @@ const Home = () => {
           <h2>What can we help you ﬁnd today?</h2>
         </div>
       </div>
-      <div className="products">
-        <div>
-          <img src={hp7} alt="printer" />
-          <h4>Printers</h4>
-        </div>
-        <div>
-          <img src={hp8} alt="laptop" />
-          <h4>PCs</h4>
-        </div>
-        <div>
-          <img src={hp9} alt="camera" />
-          <h4>Monitors and Accessories</h4>
-        </div>
+
+      {/* ✅ Rendering data properly */}
+      <div className="products" style={{cursor:"pointer"}}>
+        {mydata.map((key) => (
+          <div key={key.id}>
+            <img src={key.images} alt={key.name} />
+            <h4>{key.name}</h4>
+          </div>
+        ))}
       </div>
     </div>
   );

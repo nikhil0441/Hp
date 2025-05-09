@@ -1,61 +1,84 @@
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-
-import Home from "../pages/Home";
-import About from "../pages/About";
+import { NavLink, useNavigate } from "react-router-dom";
+import {
+  Navbar,
+  Container,
+  Nav,
+  NavDropdown,
+  Form,
+  Button,
+} from "react-bootstrap";
+import { useSelector } from "react-redux";
+import { FaShoppingCart } from "react-icons/fa";
 import logo from "../images/hp.jpeg";
 
 const TopNav = () => {
-  return (
-    <BrowserRouter>
-      <Navbar expand="lg" className="bg-body-tertiary" id="nav">
-        <Container fluid>
-          <Navbar.Brand>
-            <img src={logo} alt="Logo" width="40" height="40" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="me-auto">
-              <NavLink to="/" className="nav-link">
-                Home
-              </NavLink>
-              <NavLink to="/about" className="nav-link">
-                About
-              </NavLink>
-            </Nav>
-            <Form className="d-flex">
-              <Form.Control
-                type="search "
-                placeholder="Search Hp.com"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
-            <Button
-              variant=""
-              style={{
-                marginLeft: "20px",
-                backgroundColor: "black",
-                color: "white",
-              }}
-            >
-              Login
-            </Button>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+  const cards = useSelector((state) => state.cart.items);
+  const navigate = useNavigate();
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container fluid>
+        <Navbar.Brand>
+          <img src={logo} alt="Logo" width="40" height="40" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav className="me-auto">
+            <NavLink to="/" className="nav-link">
+              Home
+            </NavLink>
+            <NavDropdown title="Products">
+              <NavDropdown.Item as={NavLink} to="/laptop">
+                Laptop
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/pendrive">
+                Pendrive
+              </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/printers">
+                Printers
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={NavLink} to="/bags">
+                HP Bags
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavLink to="/explore" className="nav-link">
+              Explore
+            </NavLink>
+            <NavLink to="/shop" className="nav-link">
+              Shop
+            </NavLink>
+            <NavLink to="/support" className="nav-link">
+              Support
+            </NavLink>
+          </Nav>
+          <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search Hp.com"
+              className="me-2"
+            />
+            <Button variant="outline-success">Search</Button>
+          </Form>
+          <div id="header" style={{ marginLeft: "10px" }}>
+            <FaShoppingCart
+              onClick={() => navigate("/addtocard")}
+              style={{ cursor: "pointer" }}
+            />
+            <p className="card_length">{cards.length}</p>
+          </div>
+          <Button
+            style={{
+              marginLeft: "20px",
+              backgroundColor: "black",
+              color: "white",
+            }}
+          >
+            Login
+          </Button>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
