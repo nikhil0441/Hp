@@ -1,83 +1,298 @@
 {
-    "products":[
-      {
-        "id": 1,
-        "name": "Printers",
-        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Mask-Group-278@2x.png"
-      },
-      {
-        "id": 2,
-        "name": "PCs",
-        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/pcs-main.png"
-      },
-      {
-        "id": 3,
-        "name": "Monitors and Accessories",
-        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Mask-Group-277@2x.png"
-      },
-      {
-        "id": 4,
-        "name": "Monitors",
-        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6679@2x.jpg"
-      },
-      {
-        "id": 5,
-        "name": "Mice",
-        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6683@2x.jpg"
-      },
-      {
-        "id": 6,
-        "name": "KeyBoard",
-        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Ivy_Commercial_NightfallBlack_CoreSet_TopDown@2x.jpg"
-      },
-      {
-        "id": 7,
-        "name": "Webcams",
-        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6743@2x.jpg"
-      },
-      {
-        "id": 8,
-        "name": "Docks & Hubs",
-        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6744@2x.jpg"
-      },
-      {
-        "id": 9,
-        "name": "Bags",
-        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6745@2x.jpg"
-      }
-    ],
-    "Laptop": [
+  "products": [
     {
-      "id": 1,
-      "name": "HP Pavilion Plus 35.6 cm 14",
-      "specification": "  Ultra 5 processor Windows 11 Home 35.6 cm (14) diagonal,  Graphics 16 GB LPDDR5x RAM 512 GB SSD Hard Drive Backlit keyboard, ",
-      "price": " ₹75,999 ",
-      "category":"Laptop",
-      "images": 
-        "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08689354_evo_i5.png"
-        
-      
+      "id": "printers-category",
+      "name": "Printers",
+      "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Mask-Group-278@2x.png"
     },
     {
-      "id": 2,
-      "name": "HP Pavilion Plus 35.6 cm ",
-      "specification": "  Ultra 5 processor Windows 11 Home 35.6 cm (14) diagonal,  Graphics 16 GB LPDDR5x RAM 512 GB SSD Hard Drive Backlit keyboard, ",
-      "price": " ₹87,999",
-      "category": "Laptop",
-      "images": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08252924-touch_4.png"
+      "id": "pcs-category",
+      "name": "PCs",
+      "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/pcs-main.png"
     },
-     {
-      "id": 3,
-      "name": "HP Pavilion Plus 35.6 cm ",
-      "specification": "  Ultra 5 processor Windows 11 Home 35.6 cm (14) diagonal,  Graphics 16 GB LPDDR5x RAM 512 GB SSD Hard Drive Backlit keyboard, ",
-      "price": " ₹87,999",
-      "category": "Laptop",
-      "images": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08252924-touch_4.png"
+    {
+      "id": "monitors-accessories-category",
+      "name": "Monitors and Accessories",
+      "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Mask-Group-277@2x.png"
+    },
+    {
+      "id": "monitors-category",
+      "name": "Monitors",
+      "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6679@2x.jpg"
+    },
+    {
+      "id": "mice-category",
+      "name": "Mice",
+      "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6683@2x.jpg"
+    },
+    {
+      "id": "keyboard-category",
+      "name": "KeyBoard",
+      "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Ivy_Commercial_NightfallBlack_CoreSet_TopDown@2x.jpg"
+    },
+    {
+      "id": "webcams-category",
+      "name": "Webcams",
+      "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6743@2x.jpg"
+    },
+    {
+      "id": "docks-hubs-category",
+      "name": "Docks & Hubs",
+      "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6744@2x.jpg"
+    },
+    {
+      "id": "bags-category",
+      "name": "Bags",
+      "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6745@2x.jpg"
     }
-  ]
-       
-    
+  ],
+  "Laptop": [
+    {
+      "id": "hp-pavilion-14",
+      "name": "HP Pavilion Plus 35.6 cm 14",
+      "specification": "Ultra 5 processor, Windows 11 Home, 35.6 cm (14) diagonal, Graphics, 16 GB LPDDR5x RAM, 512 GB SSD, Backlit keyboard",
+      "price": "₹75,999",
+      "category": "Laptop",
+      "images": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08689354_evo_i5.png"
+    },
+    {
+      "id": "hp-pavilion-14-2",
+      "name": "HP Pavilion Plus 35.6 cm",
+      "specification": "Ultra 5 processor, Windows 11 Home, 35.6 cm (14) diagonal, Graphics, 16 GB LPDDR5x RAM, 512 GB SSD, Backlit keyboard",
+      "price": "₹87,999",
+      "category": "Laptop",
+      "images": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08252924-touch_4.png"
+    },
+    {
+      "id": "hp-laptop-15-6",
+      "name": "HP Laptop 39.6 cm (15.6) 15-fc0156AU, Silver",
+      "specification": "Ultra 5 processor, Windows 11 Home, 35.6 cm (14) diagonal, Graphics, 16 GB LPDDR5x RAM, 512 GB SSD, Backlit keyboard",
+      "price": "₹45,499",
+      "category": "Laptop",
+      "images": "https://in-media.apjonlinecdn.com/catalog/product/cache/314dec89b3219941707ad62ccc90e585/c/0/c08484491_1_7.png"
+    },
+    {
+      "id": "hp-omen-17-3",
+      "name": "HP OMEN 43.9 cm (17.3) Laptop 17-cm2027TX, Black",
+      "specification": "Ultra 5 processor, Windows 11 Home, 35.6 cm (14) diagonal, Graphics, 16 GB LPDDR5x RAM, 512 GB SSD, Backlit keyboard",
+      "price": "₹127,999",
+      "category": "Laptop",
+      "images": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c07580118_1_3.png"
+    },
+    {
+      "id": "hp-victus-15-6",
+      "name": "HP Victus 39.6 cm (15.6) Gaming Laptop 15-fa2078TX, Silver",
+      "specification": "Ultra 5 processor, Windows 11 Home, 35.6 cm (14) diagonal, Graphics, 16 GB LPDDR5x RAM, 512 GB SSD, Backlit keyboard",
+      "price": "₹88,808",
+      "category": "Laptop",
+      "images": "https://in-media.apjonlinecdn.com/catalog/product/cache/314dec89b3219941707ad62ccc90e585/c/0/c08403046_1_9.png"
+    },
+    {
+      "id": "hp-laptop-14-silver",
+      "name": "HP Laptop 35.6 cm (14) 14-gr1023TU, Silver",
+      "specification": "Ultra 5 processor, Windows 11 Home, 35.6 cm (14) diagonal, Graphics, 16 GB LPDDR5x RAM, 512 GB SSD, Backlit keyboard",
+      "price": "₹88,499",
+      "category": "Laptop",
+      "images": "https://in-media.apjonlinecdn.com/catalog/product/cache/314dec89b3219941707ad62ccc90e585/c/0/c08572373_1.png"
+    }
+  ],
+  "Pendrive": [
+    {
+      "id": "hp-x4000b-32gb",
+      "name": "HP x4000b USB 3.0 Flash Drive",
+      "brand": "HP",
+      "capacity": "32GB",
+      "price": "₹913.17",
+      "images": "https://m.media-amazon.com/images/I/61IC2NX-43L._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "The HP x4000b USB 3.0 Flash Drive offers high-speed data transfer in a sleek and durable design."
+    },
+    {
+      "id": "hp-v250w-64gb",
+      "name": "HP v250w USB 2.0 Flash Drive",
+      "brand": "HP",
+      "capacity": "64GB",
+      "price": "₹1410.17",
+      "images": "https://m.media-amazon.com/images/I/51GhS7MulfL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "A compact and reliable USB drive with 64GB capacity, ideal for storing all your important files."
+    },
+    {
+      "id": "hp-64gb-usb-3",
+      "name": "HP 64GB USB 3.0 Flash Drive",
+      "brand": "HP",
+      "capacity": "64GB",
+      "price": "₹1587.17",
+      "images": "https://m.media-amazon.com/images/I/51rWIZoJfWL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Fast data transfer with the HP 64GB USB 3.0 Flash Drive, built to withstand daily wear and tear."
+    },
+    {
+      "id": "hp-128gb-usb-3",
+      "name": "HP 128GB USB 3.0 Flash Drive",
+      "brand": "HP",
+      "capacity": "128GB",
+      "price": "₹2153.17",
+      "images": "https://m.media-amazon.com/images/I/61xNG4wjOuL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "HP 128GB USB 3.0 Flash Drive offers a high capacity and fast transfer speeds, perfect for large file storage."
+    },
+    {
+      "id": "hp-usb-3-256gb",
+      "name": "HP USB 3.0 Flash Drive 256GB",
+      "brand": "HP",
+      "capacity": "256GB",
+      "price": "₹4142.17",
+      "images": "https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/309a0338-cca8-4f84-9fd8-33712c29ca73._CR0,0,1200,628_SX810_CB1169409_QL70_.jpeg",
+      "description": "High-capacity storage with ultra-fast USB 3.0 speeds, designed for professionals and heavy file users."
+    },
+    {
+      "id": "hp-x4000b-32gb-2",
+      "name": "HP x4000b USB 3.0 Flash Drive",
+      "brand": "HP",
+      "capacity": "32GB",
+      "price": "₹913.17",
+      "images": "https://m.media-amazon.com/images/I/61IC2NX-43L._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "The HP x4000b USB 3.0 Flash Drive offers high-speed data transfer in a sleek and durable design."
+    }
+  ],
+  "Printers": [
+    {
+      "id": "hp-laserjet-pro-mfp-m428fdw",
+      "name": "HP LaserJet Pro MFP M428fdw",
+      "category": "Laser Printer",
+      "specification": "Print, scan, copy, fax, wireless, 40 ppm",
+      "price": "₹32,999",
+      "images": "https://m.media-amazon.com/images/I/51gq-23YASL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "A reliable and fast laser printer with advanced security features and cloud printing support."
+    },
+    {
+      "id": "hp-officejet-pro-9015",
+      "name": "HP OfficeJet Pro 9015",
+      "category": "Inkjet Printer",
+      "specification": "Print, scan, copy, fax, wireless, 22 ppm (black), 18 ppm (color)",
+      "price": "₹22,499",
+      "images": "https://m.media-amazon.com/images/I/61pxETXKwnL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "A high-speed printer with smart features, ideal for small businesses."
+    },
+    {
+      "id": "hp-envy-6055e-all-in-one",
+      "name": "HP Envy 6055e All-in-One Printer",
+      "category": "Inkjet Printer",
+      "specification": "Print, scan, copy, wireless, 10 ppm (black), 7 ppm (color)",
+      "price": "₹7,599",
+      "images": "https://m.media-amazon.com/images/I/71-bAHPkOXL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Affordable all-in-one inkjet printer for home use with easy wireless connectivity."
+    },
+    {
+      "id": "hp-deskjet-2331-all-in-one",
+      "name": "HP DeskJet 2331 All-in-One Printer",
+      "category": "Inkjet Printer",
+      "specification": "Print, scan, copy, USB, 7.5 ppm (black), 5.5 ppm (color)",
+      "price": "₹3,299",
+      "images": "https://m.media-amazon.com/images/I/61oVMkLlMUL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Compact and affordable all-in-one printer for everyday printing needs."
+    },
+    {
+      "id": "hp-laserjet-pro-mfp-m130nw",
+      "name": "HP LaserJet Pro MFP M130nw",
+      "category": "Laser Printer",
+      "specification": "Print, scan, copy, wireless, 23 ppm",
+      "price": "₹14,499",
+      "images": "https://m.media-amazon.com/images/I/615Kr5gtGhL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Compact and efficient laser printer with wireless connectivity."
+    },
+    {
+      "id": "hp-laserjet-pro-mfp-m130mw",
+      "name": "HP Deskjet 2331 Colour Printer",
+      "category": "Laser Printer",
+      "specification": "Print, scan, copy, wireless, 23 ppm",
+      "price": "₹14,499",
+      "images": "https://m.media-amazon.com/images/I/61lOXJvkxsL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Compact and efficient laser printer with wireless connectivity."
+    }
+  ],
+  
+    "Bags": [
+      {
+        "id": "bag-1",
+        "name": "HP Essential Backpack 15.6 inch",
+        "brand": "HP",
+        "category": "Backpack",
+        "price": "₹2,299",
+        "images": "https://m.media-amazon.com/images/I/81qzW-PHyYL._AC_UY327_FMwebp_QL65_.jpg",
+        "description": "Durable and stylish backpack designed to fit laptops up to 15.6 inches, with multiple compartments for accessories."
+      },
+      {
+        "id": "bag-2",
+        "name": "HP Business Laptop Backpack",
+        "brand": "HP",
+        "category": "Backpack",
+        "price": "₹3,499",
+        "images": "https://m.media-amazon.com/images/I/51MLtopqzUL._AC_UY327_FMwebp_QL65_.jpg",
+        "description": "Professional and spacious backpack with ergonomic shoulder straps, ideal for business professionals and commuters."
+      },
+      {
+        "id": "bag-3",
+        "name": "HP Reversible Tote Bag",
+        "brand": "HP",
+        "category": "Tote",
+        "price": "₹1,899",
+        "images": "https://m.media-amazon.com/images/I/91BvciFhwpL._AC_UY327_FMwebp_QL65_.jpg",
+        "description": "Fashionable tote bag that is reversible, made from high-quality materials to keep your essentials organized."
+      },
+      {
+        "id": "bag-4",
+        "name": "HP Eco-Friendly Laptop Sleeve",
+        "brand": "HP",
+        "category": "Sleeve",
+        "price": "₹1,199",
+        "images": "https://m.media-amazon.com/images/I/31wapDSg+XL._AC_UY327_FMwebp_QL65_.jpg",
+        "description": "Protective and eco-friendly laptop sleeve made from sustainable materials, designed to fit laptops up to 15.6 inches."
+      },
+      {
+        "id": "bag-5",
+        "name": "HP Spectre Slim Briefcase",
+        "brand": "HP",
+        "category": "Briefcase",
+        "price": "₹5,499",
+        "images": "https://m.media-amazon.com/images/I/91OfurZnjYL._AC_UY327_FMwebp_QL65_.jpg",
+        "description": "Premium briefcase with a slim design and plenty of space for your laptop, documents, and accessories."
+      },
+      {
+        "id": "bag-6",
+        "name": "HP Omen Gaming Backpack",
+        "brand": "HP",
+        "category": "Gaming Backpack",
+        "price": "₹4,799",
+        "images": "https://m.media-amazon.com/images/I/A1KwlpA8pTL._AC_UY327_FMwebp_QL65_.jpg",
+        "description": "Durable and spacious backpack designed specifically for gamers, with extra compartments for gaming accessories."
+      },
+      {
+        "id": "bag-7",
+        "name": "FUR JADEN Anti Theft Number Lock Backpack Bag ",
+        "brand": "HP",
+        "category": "Gaming Backpack",
+        "price": "₹1520",
+        "images": "https://m.media-amazon.com/images/I/61egMfcDWlL._AC_UY327_FMwebp_QL65_.jpg",
+        "description": "Durable and spacious backpack designed specifically for gamers, with extra compartments for gaming accessories."
+      },
+      {
+        "id": "bag-8",
+        "name": "Artistix Avian Unisex Water Repellent",
+        "brand": "HP",
+        "category": "Gaming Backpack",
+        "price": "₹2390",
+        "images": "https://m.media-amazon.com/images/I/51-J9ETczEL._AC_UL960_FMwebp_QL65_.jpg",
+        "description": "Durable and spacious backpack designed specifically for gamers, with extra compartments for gaming accessories."
+      },
+      {
+        "id": "bag-9",
+        "name": "EUME Eclipse 20L Laptop Bag for Men",
+        "brand": "HP",
+        "category": "Gaming Backpack",
+        "price": "₹4,498",
+        "images": "https://m.media-amazon.com/images/I/810Q4gjakLL._AC_UY327_FMwebp_QL65_.jpg",
+        "description": "Durable and spacious backpack designed specifically for gamers, with extra compartments for gaming accessories."
+      }
+      
+    ]
+  }
+  
 
-        
-    
-}
