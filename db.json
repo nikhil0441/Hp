@@ -1,0 +1,82 @@
+{
+    "products":[
+      {
+        "id": 1,
+        "name": "Printers",
+        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Mask-Group-278@2x.png"
+      },
+      {
+        "id": 2,
+        "name": "PCs",
+        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/pcs-main.png"
+      },
+      {
+        "id": 3,
+        "name": "Monitors and Accessories",
+        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Mask-Group-277@2x.png"
+      },
+      {
+        "id": 4,
+        "name": "Monitors",
+        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6679@2x.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Mice",
+        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6683@2x.jpg"
+      },
+      {
+        "id": 6,
+        "name": "KeyBoard",
+        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Ivy_Commercial_NightfallBlack_CoreSet_TopDown@2x.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Webcams",
+        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6743@2x.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Docks & Hubs",
+        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6744@2x.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Bags",
+        "images": "https://www.hp.com/content/dam/sites/worldwide/homepage/images/Group-6745@2x.jpg"
+      }
+    ],
+    "Laptop": [
+    {
+      "id": 1,
+      "name": "HP Pavilion Plus 35.6 cm 14",
+      "specification": "  Ultra 5 processor Windows 11 Home 35.6 cm (14) diagonal,  Graphics 16 GB LPDDR5x RAM 512 GB SSD Hard Drive Backlit keyboard, ",
+      "price": " ₹75,999 ",
+      "category":"Laptop",
+      "images": 
+        "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08689354_evo_i5.png"
+        
+      
+    },
+    {
+      "id": 2,
+      "name": "HP Pavilion Plus 35.6 cm ",
+      "specification": "  Ultra 5 processor Windows 11 Home 35.6 cm (14) diagonal,  Graphics 16 GB LPDDR5x RAM 512 GB SSD Hard Drive Backlit keyboard, ",
+      "price": " ₹87,999",
+      "category": "Laptop",
+      "images": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08252924-touch_4.png"
+    }, {
+      "id": 3,
+      "name": "HP Pavilion Plus 35.6 cm ",
+      "specification": "  Ultra 5 processor Windows 11 Home 35.6 cm (14) diagonal,  Graphics 16 GB LPDDR5x RAM 512 GB SSD Hard Drive Backlit keyboard, ",
+      "price": " ₹87,999",
+      "category": "Laptop",
+      "images": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08252924-touch_4.png"
+    }
+  ]
+       
+    
+
+        
+    
+}
