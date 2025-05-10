@@ -49,10 +49,16 @@
     "Laptop": [
     {
       "id": 1,
+<<<<<<< HEAD
       "name": "HP Pavilion Plus 35.6 cm 14",
       "specification": "  Ultra 5 processor Windows 11 Home 35.6 cm (14) diagonal,  Graphics 16 GB LPDDR5x RAM 512 GB SSD Hard Drive Backlit keyboard, ",
       "price": " ₹75,999 ",
       "category":"Laptop",
+=======
+      "name": "HP Pavilion Plus 35.6 cm (14) Laptop 14-ew1082TU, Blue",
+      "specification": "Stream, listen, browse and do all the things. More modern, more premium design elements on mainstream devices for a great price, Intel® Evo™ platform Powered by Intel® Core™ Ultra 5 processor Windows 11 Home 35.6 cm (14) diagonal, WQXGA display with Intel® Arc™ Graphics 16 GB LPDDR5x RAM 512 GB SSD Hard Drive Backlit keyboard, Wide Vision 5MP IR camera",
+      "price": " ₹75,999 ",
+>>>>>>> a5b3b42ce28265159e7a33756efdad95c609462c
       "images": 
         "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08689354_evo_i5.png"
         
@@ -60,6 +66,7 @@
     },
     {
       "id": 2,
+<<<<<<< HEAD
       "name": "HP Pavilion Plus 35.6 cm ",
       "specification": "  Ultra 5 processor Windows 11 Home 35.6 cm (14) diagonal,  Graphics 16 GB LPDDR5x RAM 512 GB SSD Hard Drive Backlit keyboard, ",
       "price": " ₹87,999",
@@ -72,6 +79,14 @@
       "price": " ₹87,999",
       "category": "Laptop",
       "images": "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08252924-touch_4.png"
+=======
+      "name": "HP Pavilion Plus 35.6 cm (14) Laptop 14-ew1082TU, Blue",
+      "specification": "Stream, listen, browse and do all the things. More modern, more premium design elements on mainstream devices for a great price Intel® Evo™ platform Powered by Intel® Core™ Ultra 5 processor Windows 11 Home 35.6 cm (14) diagonal, WQXGA display with Intel® Arc™ Graphics 16 GB LPDDR5x RAM 512 GB SSD Hard Drive Backlit keyboard, Wide Vision 5MP IR camera",
+      "price": " ₹87,999",
+      "images": 
+        "https://in-media.apjonlinecdn.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/c/0/c08252924-touch_4.png"
+       
+>>>>>>> a5b3b42ce28265159e7a33756efdad95c609462c
     }
   ]
        
