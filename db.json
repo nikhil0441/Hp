@@ -104,7 +104,7 @@
       "capacity": "32GB",
       "price": "₹913.17",
       "images": "https://m.media-amazon.com/images/I/61IC2NX-43L._AC_UY327_FMwebp_QL65_.jpg",
-      "description": "The HP x4000b USB 3.0 Flash Drive offers high-speed data transfer in a sleek and durable design."
+      "specification": "The HP x4000b USB 3.0 Flash Drive offers high-speed data transfer in a sleek and durable design."
     },
     {
       "id": "hp-v250w-64gb",
@@ -113,7 +113,7 @@
       "capacity": "64GB",
       "price": "₹1410.17",
       "images": "https://m.media-amazon.com/images/I/51GhS7MulfL._AC_UY327_FMwebp_QL65_.jpg",
-      "description": "A compact and reliable USB drive with 64GB capacity, ideal for storing all your important files."
+      "specification": "A compact and reliable USB drive with 64GB capacity, ideal for storing all your important files."
     },
     {
       "id": "hp-64gb-usb-3",
@@ -122,7 +122,7 @@
       "capacity": "64GB",
       "price": "₹1587.17",
       "images": "https://m.media-amazon.com/images/I/51rWIZoJfWL._AC_UY327_FMwebp_QL65_.jpg",
-      "description": "Fast data transfer with the HP 64GB USB 3.0 Flash Drive, built to withstand daily wear and tear."
+      "specification": "Fast data transfer with the HP 64GB USB 3.0 Flash Drive, built to withstand daily wear and tear."
     },
     {
       "id": "hp-128gb-usb-3",
@@ -131,7 +131,7 @@
       "capacity": "128GB",
       "price": "₹2153.17",
       "images": "https://m.media-amazon.com/images/I/61xNG4wjOuL._AC_UY327_FMwebp_QL65_.jpg",
-      "description": "HP 128GB USB 3.0 Flash Drive offers a high capacity and fast transfer speeds, perfect for large file storage."
+      "specification": "HP 128GB USB 3.0 Flash Drive offers a high capacity and fast transfer speeds, perfect for large file storage."
     },
     {
       "id": "hp-usb-3-256gb",
@@ -140,7 +140,7 @@
       "capacity": "256GB",
       "price": "₹4142.17",
       "images": "https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/309a0338-cca8-4f84-9fd8-33712c29ca73._CR0,0,1200,628_SX810_CB1169409_QL70_.jpeg",
-      "description": "High-capacity storage with ultra-fast USB 3.0 speeds, designed for professionals and heavy file users."
+      "specification": "High-capacity storage with ultra-fast USB 3.0 speeds, designed for professionals and heavy file users."
     },
     {
       "id": "hp-x4000b-32gb-2",
@@ -149,7 +149,7 @@
       "capacity": "32GB",
       "price": "₹913.17",
       "images": "https://m.media-amazon.com/images/I/61IC2NX-43L._AC_UY327_FMwebp_QL65_.jpg",
-      "description": "The HP x4000b USB 3.0 Flash Drive offers high-speed data transfer in a sleek and durable design."
+      "specification": "The HP x4000b USB 3.0 Flash Drive offers high-speed data transfer in a sleek and durable design."
     }
   ],
   "Printers": [
