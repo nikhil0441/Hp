@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+#header {
+  /* width: 100%; */
+  height: 30px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 20px;
+  padding-left: 20px;
+  /* padding-right: 20px; Ensure spacing from the edge */
+  /* position: fixed; */
+  /* z-index: 1; */
+  /* position: absolute; */
+}
+#nav{
+ /* position: fixed; */
+  /* z-index: 1; */
+}
+
+.Cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 15px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: center; /* Centers items */
+  gap: 20px; /* Adds spacing between items */
+  padding: 20px;
+}
+.Cards:hover {
+  border-color: black; /* Border appears when hovered */
+}
+
+/* Hide dropdown caret */
+.no-caret .dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Optional: Center card_length counter */
+.card_length {
+  font-size: 14px;
+  font-weight: bold;
+}
+.nav-link {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2 {
+  color: #333;
+}
+
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: #2e3a59;
+  color: #fff;
+  font-size: 16px;
+}
+
+.table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f0f4f9;
+}
+
+.table td,
+.table th {
+  vertical-align: middle !important;
+  text-align: center;
+  padding: 15px;
+}
+
+.table img {
+  border: 2px solid #dee2e6;
+  padding: 6px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.table img:hover {
+  transform: scale(1.05);
+  border-color: #0d6efd;
+}
+
+.table button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.table button:hover {
+  background-color: #c62828;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 22px;
+  color: #212529;
+}
+
+.qty-controls svg {
+  color: #0d6efd;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.qty-controls svg:hover {
+  transform: scale(1.2);
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.table-secondary td {
+  background-color: #e9f5e9;
+  font-weight: bold;
+}
+.card_length {
+  font-size: 14px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #333 !important;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}

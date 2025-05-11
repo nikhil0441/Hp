@@ -1,0 +1,93 @@
+.carousel-img {
+  width: 100%; /* Ensures responsiveness */
+  height: 500px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.headline {
+  text-align: center; /* Center-align the text */
+  padding: 50px 0; /* Add padding for spacing */
+}
+
+.headline h1 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.headline h2 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between the products */
+  padding: 20px;
+}
+
+.products div {
+  width: calc(33.333% - 20px); /* Ensures 3 products per row with spacing */
+  height: 350px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden; /* Prevent the image from overflowing */
+  border-radius: 8px; /* Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease;
+}
+
+.products div:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.products div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the div area */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+}
+
+.products div img:hover {
+  transform: scale(1.05); /* Slight zoom effect on image */
+  filter: brightness(1.1); /* Slight brightness increase */
+}
+
+.products div h4 {
+  font-size: 20px;
+  color: white;
+  height: 50px;
+  text-align: center;
+  background-color: rgb(26, 27, 49);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .products div {
+    width: calc(50% - 20px); /* 2 products per row on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .products div {
+    width: 100%; /* 1 product per row on extra small screens */
+  }
+
+  .headline h1 {
+    font-size: 40px; /* Adjust font size for small screens */
+  }
+
+  .headline h2 {
+    font-size: 30px; /* Adjust font size for small screens */
+  }
+}
