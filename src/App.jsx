@@ -12,6 +12,7 @@ import AddToCard from "./pages/AddToCard";
 import Faqs from "./pages/Faqs";
 import Contact from "./pages/Contact";
 import LiveChat from "./pages/LiveChat";
+import Login from "./pages/Login";
 // import ReturnsExchanges from "./pages/ReturnsExchanges";
 // import ShippingInfo from "./pages/ShippingInfo";
 // import Warranty from "./pages/Warranty";
@@ -32,7 +33,7 @@ const App = () => {
         <Route path="faqs" element={<Faqs />} />
         <Route path="contact" element={<Contact />} />
         <Route path="live-chat" element={<LiveChat />} />
-        
+        <Route path="/login" element={<Login />} />
       </Route>
     </Routes>
   );

@@ -103,7 +103,6 @@ const TopNav = () => {
               <NavDropdown.Item as={NavLink} to="/live-chat">
                 Live Chat
               </NavDropdown.Item>
-             
             </NavDropdown>
           </Nav>
 
@@ -126,6 +125,7 @@ const TopNav = () => {
             </div>
 
             <Button
+              onClick={() => navigate("/login")}
               style={{
                 backgroundColor: "black",
                 color: "white",
