@@ -11,7 +11,7 @@ import { useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import logo from "../images/hp.jpeg";
-import "../css/Style.css"; // Make sure styles are defined here
+import "../css/Style.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -19,11 +19,53 @@ const TopNav = () => {
   const cards = useSelector((state) => state.cart.items);
   const navigate = useNavigate();
   const [showDropdown, setShowDropdown] = useState(false);
-  const [showSupportDropdown, setShowSupportDropdown] = useState(false); // For Support Dropdown
+  const [showSupportDropdown, setShowSupportDropdown] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  // New state to check login status
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
+
+    // Check login token from localStorage
+    const token = localStorage.getItem("authToken");
+    setIsLoggedIn(!!token);
   }, []);
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+
+    const formattedQuery = searchQuery.trim().toLowerCase();
+
+    const routeMap = {
+      laptop: "/laptop",
+      pendrive: "/pendrive",
+      printer: "/printers",
+      printers: "/printers",
+      bag: "/bags",
+      bags: "/bags",
+    };
+
+    const foundRoute = Object.entries(routeMap).find(([key]) =>
+      formattedQuery.includes(key)
+    );
+
+    if (foundRoute) {
+      navigate(foundRoute[1]);
+    } else {
+      alert("Product not found");
+    }
+
+    setSearchQuery("");
+  };
+
+  // Logout handler
+  const handleLogout = () => {
+    localStorage.removeItem("authToken"); // Remove token
+    setIsLoggedIn(false); // Update state
+    navigate("/login"); // Redirect to login
+  };
 
   return (
     <Navbar
@@ -85,7 +127,6 @@ const TopNav = () => {
               Explore
             </NavLink>
 
-            {/* Support Dropdown */}
             <NavDropdown
               show={showSupportDropdown}
               onMouseEnter={() => setShowSupportDropdown(true)}
@@ -106,13 +147,20 @@ const TopNav = () => {
             </NavDropdown>
           </Nav>
 
-          <Form className="d-flex align-items-center mx-3">
+          <Form
+            className="d-flex align-items-center mx-3"
+            onSubmit={handleSearch}
+          >
             <Form.Control
               type="search"
               placeholder="Search Hp.com"
               className="me-2"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <Button variant="outline-success">Search</Button>
+            <Button type="submit" variant="outline-success">
+              Search
+            </Button>
           </Form>
 
           <div className="d-flex align-items-center gap-3 mx-3">
@@ -124,15 +172,21 @@ const TopNav = () => {
               <p className="card_length mb-0 ms-1">{cards.length}</p>
             </div>
 
-            <Button
-              onClick={() => navigate("/login")}
-              style={{
-                backgroundColor: "black",
-                color: "white",
-              }}
-            >
-              Login
-            </Button>
+            {isLoggedIn ? (
+              <Button
+                onClick={handleLogout}
+                style={{ backgroundColor: "red", color: "white" }}
+              >
+                Logout
+              </Button>
+            ) : (
+              <Button
+                onClick={() => navigate("/login")}
+                style={{ backgroundColor: "black", color: "white" }}
+              >
+                Login
+              </Button>
+            )}
           </div>
         </Navbar.Collapse>
       </Container>

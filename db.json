@@ -208,91 +208,109 @@
       "description": "Compact and efficient laser printer with wireless connectivity."
     }
   ],
-  
-    "Bags": [
-      {
-        "id": "bag-1",
-        "name": "HP Essential Backpack 15.6 inch",
-        "brand": "HP",
-        "category": "Backpack",
-        "price": "₹2,299",
-        "images": "https://m.media-amazon.com/images/I/81qzW-PHyYL._AC_UY327_FMwebp_QL65_.jpg",
-        "description": "Durable and stylish backpack designed to fit laptops up to 15.6 inches, with multiple compartments for accessories."
-      },
-      {
-        "id": "bag-2",
-        "name": "HP Business Laptop Backpack",
-        "brand": "HP",
-        "category": "Backpack",
-        "price": "₹3,499",
-        "images": "https://m.media-amazon.com/images/I/51MLtopqzUL._AC_UY327_FMwebp_QL65_.jpg",
-        "description": "Professional and spacious backpack with ergonomic shoulder straps, ideal for business professionals and commuters."
-      },
-      {
-        "id": "bag-3",
-        "name": "HP Reversible Tote Bag",
-        "brand": "HP",
-        "category": "Tote",
-        "price": "₹1,899",
-        "images": "https://m.media-amazon.com/images/I/91BvciFhwpL._AC_UY327_FMwebp_QL65_.jpg",
-        "description": "Fashionable tote bag that is reversible, made from high-quality materials to keep your essentials organized."
-      },
-      {
-        "id": "bag-4",
-        "name": "HP Eco-Friendly Laptop Sleeve",
-        "brand": "HP",
-        "category": "Sleeve",
-        "price": "₹1,199",
-        "images": "https://m.media-amazon.com/images/I/31wapDSg+XL._AC_UY327_FMwebp_QL65_.jpg",
-        "description": "Protective and eco-friendly laptop sleeve made from sustainable materials, designed to fit laptops up to 15.6 inches."
-      },
-      {
-        "id": "bag-5",
-        "name": "HP Spectre Slim Briefcase",
-        "brand": "HP",
-        "category": "Briefcase",
-        "price": "₹5,499",
-        "images": "https://m.media-amazon.com/images/I/91OfurZnjYL._AC_UY327_FMwebp_QL65_.jpg",
-        "description": "Premium briefcase with a slim design and plenty of space for your laptop, documents, and accessories."
-      },
-      {
-        "id": "bag-6",
-        "name": "HP Omen Gaming Backpack",
-        "brand": "HP",
-        "category": "Gaming Backpack",
-        "price": "₹4,799",
-        "images": "https://m.media-amazon.com/images/I/A1KwlpA8pTL._AC_UY327_FMwebp_QL65_.jpg",
-        "description": "Durable and spacious backpack designed specifically for gamers, with extra compartments for gaming accessories."
-      },
-      {
-        "id": "bag-7",
-        "name": "FUR JADEN Anti Theft Number Lock Backpack Bag ",
-        "brand": "HP",
-        "category": "Gaming Backpack",
-        "price": "₹1520",
-        "images": "https://m.media-amazon.com/images/I/61egMfcDWlL._AC_UY327_FMwebp_QL65_.jpg",
-        "description": "Durable and spacious backpack designed specifically for gamers, with extra compartments for gaming accessories."
-      },
-      {
-        "id": "bag-8",
-        "name": "Artistix Avian Unisex Water Repellent",
-        "brand": "HP",
-        "category": "Gaming Backpack",
-        "price": "₹2390",
-        "images": "https://m.media-amazon.com/images/I/51-J9ETczEL._AC_UL960_FMwebp_QL65_.jpg",
-        "description": "Durable and spacious backpack designed specifically for gamers, with extra compartments for gaming accessories."
-      },
-      {
-        "id": "bag-9",
-        "name": "EUME Eclipse 20L Laptop Bag for Men",
-        "brand": "HP",
-        "category": "Gaming Backpack",
-        "price": "₹4,498",
-        "images": "https://m.media-amazon.com/images/I/810Q4gjakLL._AC_UY327_FMwebp_QL65_.jpg",
-        "description": "Durable and spacious backpack designed specifically for gamers, with extra compartments for gaming accessories."
-      }
-      
-    ]
-  }
-  
-
+  "Bags": [
+    {
+      "id": "bag-1",
+      "name": "HP Essential Backpack 15.6 inch",
+      "brand": "HP",
+      "category": "Backpack",
+      "price": "₹2,299",
+      "images": "https://m.media-amazon.com/images/I/81qzW-PHyYL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Durable and stylish backpack designed to fit laptops up to 15.6 inches, with multiple compartments for accessories."
+    },
+    {
+      "id": "bag-2",
+      "name": "HP Business Laptop Backpack",
+      "brand": "HP",
+      "category": "Backpack",
+      "price": "₹3,499",
+      "images": "https://m.media-amazon.com/images/I/51MLtopqzUL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Professional and spacious backpack with ergonomic shoulder straps, ideal for business professionals and commuters."
+    },
+    {
+      "id": "bag-3",
+      "name": "HP Reversible Tote Bag",
+      "brand": "HP",
+      "category": "Tote",
+      "price": "₹1,899",
+      "images": "https://m.media-amazon.com/images/I/91BvciFhwpL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Fashionable tote bag that is reversible, made from high-quality materials to keep your essentials organized."
+    },
+    {
+      "id": "bag-4",
+      "name": "HP Eco-Friendly Laptop Sleeve",
+      "brand": "HP",
+      "category": "Sleeve",
+      "price": "₹1,199",
+      "images": "https://m.media-amazon.com/images/I/31wapDSg+XL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Protective and eco-friendly laptop sleeve made from sustainable materials, designed to fit laptops up to 15.6 inches."
+    },
+    {
+      "id": "bag-5",
+      "name": "HP Spectre Slim Briefcase",
+      "brand": "HP",
+      "category": "Briefcase",
+      "price": "₹5,499",
+      "images": "https://m.media-amazon.com/images/I/91OfurZnjYL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Premium briefcase with a slim design and plenty of space for your laptop, documents, and accessories."
+    },
+    {
+      "id": "bag-6",
+      "name": "HP Omen Gaming Backpack",
+      "brand": "HP",
+      "category": "Gaming Backpack",
+      "price": "₹4,799",
+      "images": "https://m.media-amazon.com/images/I/A1KwlpA8pTL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Durable and spacious backpack designed specifically for gamers, with extra compartments for gaming accessories."
+    },
+    {
+      "id": "bag-7",
+      "name": "FUR JADEN Anti Theft Number Lock Backpack Bag ",
+      "brand": "HP",
+      "category": "Gaming Backpack",
+      "price": "₹1520",
+      "images": "https://m.media-amazon.com/images/I/61egMfcDWlL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Durable and spacious backpack designed specifically for gamers, with extra compartments for gaming accessories."
+    },
+    {
+      "id": "bag-8",
+      "name": "Artistix Avian Unisex Water Repellent",
+      "brand": "HP",
+      "category": "Gaming Backpack",
+      "price": "₹2390",
+      "images": "https://m.media-amazon.com/images/I/51-J9ETczEL._AC_UL960_FMwebp_QL65_.jpg",
+      "description": "Durable and spacious backpack designed specifically for gamers, with extra compartments for gaming accessories."
+    },
+    {
+      "id": "bag-9",
+      "name": "EUME Eclipse 20L Laptop Bag for Men",
+      "brand": "HP",
+      "category": "Gaming Backpack",
+      "price": "₹4,498",
+      "images": "https://m.media-amazon.com/images/I/810Q4gjakLL._AC_UY327_FMwebp_QL65_.jpg",
+      "description": "Durable and spacious backpack designed specifically for gamers, with extra compartments for gaming accessories."
+    }
+  ],
+  "Login": [
+    {
+      "id": "1",
+      "email": "nikhilpatel@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "e488",
+      "email": "patel@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "09cc",
+      "email": "patel@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "7fbb",
+      "email": "patel@gmail.com",
+      "password": "123456"
+    }
+  ]
+}

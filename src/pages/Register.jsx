@@ -4,12 +4,14 @@ import { useNavigate, Link } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import "./Auth.css";
+import "../css/Register.css";
 
-const Login = () => {
+const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const navigate = useNavigate();
 
   const validate = () => {
@@ -26,6 +28,14 @@ const Login = () => {
       toast.error("Password is required");
       return false;
     }
+    if (password.length < 6) {
+      toast.error("Password must be at least 6 characters");
+      return false;
+    }
+    if (password !== confirmPassword) {
+      toast.error("Passwords do not match");
+      return false;
+    }
     return true;
   };
 
@@ -33,7 +43,7 @@ const Login = () => {
     e.preventDefault();
 
     if (validate()) {
-      const loginData = { email, password };
+      const userData = { email, password };
 
       try {
         const response = await fetch("http://localhost:3000/Login", {
@@ -41,23 +51,21 @@ const Login = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(loginData),
+          body: JSON.stringify(userData),
         });
 
         if (response.ok) {
-          toast.success("Login successful!");
+          toast.success("Registration Successful!");
           setTimeout(() => {
-            navigate("/"); // Redirect to homepage or dashboard
-          }, 1500);
+            navigate("/login");
+          }, 2000);
         } else {
           const errorData = await response.json();
-          toast.error(
-            errorData.message || "Login failed. Check your credentials."
-          );
+          toast.error(errorData.message || "Registration failed.");
         }
       } catch (error) {
         toast.error("Network error. Please try again later.");
-        console.error("Login error:", error);
+        console.error("Registration error:", error);
       }
     }
   };
@@ -72,9 +80,9 @@ const Login = () => {
         <Row className="w-100 justify-content-center">
           <Col xs={12} md={7} lg={5}>
             <div className="auth-card shadow p-4 rounded">
-              <h2 className="text-center mb-4">Login</h2>
+              <h2 className="text-center mb-4">Create Account</h2>
               <Form onSubmit={handleSubmit} noValidate>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3" controlId="formEmail">
                   <Form.Label>Email address</Form.Label>
                   <Form.Control
                     type="email"
@@ -85,12 +93,12 @@ const Login = () => {
                   />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3" controlId="formPassword">
                   <Form.Label>Password</Form.Label>
                   <InputGroup>
                     <Form.Control
                       type={showPassword ? "text" : "password"}
-                      placeholder="Password"
+                      placeholder="Enter password"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       required
@@ -106,18 +114,41 @@ const Login = () => {
                   </InputGroup>
                 </Form.Group>
 
+                <Form.Group className="mb-3" controlId="formConfirmPassword">
+                  <Form.Label>Confirm Password</Form.Label>
+                  <InputGroup>
+                    <Form.Control
+                      type={showConfirmPassword ? "text" : "password"}
+                      placeholder="Confirm password"
+                      value={confirmPassword}
+                      onChange={(e) => setConfirmPassword(e.target.value)}
+                      required
+                    />
+                    <Button
+                      variant="outline-secondary"
+                      onClick={() =>
+                        setShowConfirmPassword(!showConfirmPassword)
+                      }
+                      type="button"
+                      tabIndex={-1}
+                    >
+                      {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+                    </Button>
+                  </InputGroup>
+                </Form.Group>
+
                 <Button
                   variant="dark"
                   type="submit"
                   className="w-100 fw-semibold"
                 >
-                  Login
+                  Register
                 </Button>
               </Form>
               <div className="text-center mt-3">
-                Don't have an account?{" "}
-                <Link to="/Register" className="text-decoration-none">
-                  Register here
+                Already have an account?{" "}
+                <Link to="/login" className="text-decoration-none">
+                  Login here
                 </Link>
               </div>
             </div>
@@ -128,4 +159,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
