@@ -103,6 +103,7 @@ const Footer = () => {
             <div>©2025 HP Development Company, L.P. All rights reserved.</div>
           </div>
         </div>
+        {/* helllo gauy */}
       </footer>
     </>
   );
